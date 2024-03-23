@@ -21,3 +21,15 @@
    # shell: docker rm $(docker ps -a -q)
   - name: Deploy Docker Container
     command: docker run -itd -p 8088:8081 ganu1710/projinsurnace:1.0
+
+#- name: Install Kubernetes and deploy image
+ # hosts: kubernetes_nodes
+  #become: true
+  #tasks:
+   # - name: Run kubeadm installation script
+    #  command: /path/to/your/kubeadm_installation_script.sh
+     # args:
+      #  creates: /usr/bin/kubeadm  # Check if Kubernetes components are already installed
+
+    #- name: Load Docker image into Kubernetes
+     # command: kubectl set image deployment/your-deployment-name your-container-name=your-image-name:latest --record
