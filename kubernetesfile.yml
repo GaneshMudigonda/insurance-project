@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: con-ins
-          image: ganu1710/ProjInsurnace:1.0
+          image: ganu1710/projinsurnace:1.0
           ports:
             - containerPort: 8081
           env:
